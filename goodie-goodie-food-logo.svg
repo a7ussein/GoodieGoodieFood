@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="660" viewBox="0 0 300 330" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="coneGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F4A83D" />
+      <stop offset="100%" stop-color="#D4862A" />
+    </linearGradient>
+    <linearGradient id="scoopPink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF8FAB" />
+      <stop offset="100%" stop-color="#E56B8A" />
+    </linearGradient>
+    <linearGradient id="scoopMint" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7EDCB5" />
+      <stop offset="100%" stop-color="#5BC49A" />
+    </linearGradient>
+    <linearGradient id="scoopChoc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B5E3C" />
+      <stop offset="100%" stop-color="#6B4226" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- ICE CREAM ICON -->
+  <g transform="translate(100, 0)" filter="url(#shadow)">
+    <!-- Waffle cone -->
+    <path d="M30 110 L50 185 L70 110" fill="url(#coneGrad)" stroke="#C47A25" stroke-width="2" />
+    <line x1="36" y1="120" x2="64" y2="120" stroke="#C47A25" stroke-width="1.2" opacity="0.5" />
+    <line x1="39" y1="132" x2="61" y2="132" stroke="#C47A25" stroke-width="1.2" opacity="0.5" />
+    <line x1="42" y1="144" x2="58" y2="144" stroke="#C47A25" stroke-width="1.2" opacity="0.5" />
+    <line x1="45" y1="156" x2="55" y2="156" stroke="#C47A25" stroke-width="1.2" opacity="0.5" />
+    <line x1="38" y1="110" x2="50" y2="160" stroke="#C47A25" stroke-width="1" opacity="0.4" />
+    <line x1="50" y1="110" x2="50" y2="185" stroke="#C47A25" stroke-width="1" opacity="0.4" />
+    <line x1="62" y1="110" x2="50" y2="160" stroke="#C47A25" stroke-width="1" opacity="0.4" />
+
+    <!-- Chocolate scoop -->
+    <circle cx="50" cy="88" r="28" fill="url(#scoopChoc)" stroke="#5A3820" stroke-width="1.5" />
+    <!-- Mint scoop -->
+    <circle cx="28" cy="76" r="26" fill="url(#scoopMint)" stroke="#4AA882" stroke-width="1.5" />
+    <!-- Pink scoop -->
+    <circle cx="72" cy="76" r="26" fill="url(#scoopPink)" stroke="#C95577" stroke-width="1.5" />
+
+    <!-- Sprinkles -->
+    <rect x="20" y="64" width="7" height="3" rx="1.5" fill="#FFD700" transform="rotate(-30 23 65)" />
+    <rect x="38" y="56" width="7" height="3" rx="1.5" fill="#FF6B6B" transform="rotate(20 41 57)" />
+    <rect x="55" y="58" width="7" height="3" rx="1.5" fill="#7ED4FC" transform="rotate(-15 58 59)" />
+    <rect x="76" y="64" width="7" height="3" rx="1.5" fill="#FFD700" transform="rotate(35 79 65)" />
+    <rect x="48" y="72" width="6" height="3" rx="1.5" fill="#FF9ECD" transform="rotate(10 51 73)" />
+    <rect x="66" y="85" width="6" height="3" rx="1.5" fill="#A8E6CF" transform="rotate(-25 69 86)" />
+    <rect x="30" y="85" width="6" height="3" rx="1.5" fill="#FFB347" transform="rotate(40 33 86)" />
+    <rect x="14" y="75" width="6" height="3" rx="1.5" fill="#C4A8FF" transform="rotate(-10 17 76)" />
+    <rect x="82" y="75" width="6" height="3" rx="1.5" fill="#FF6B6B" transform="rotate(15 85 76)" />
+
+    <!-- Cherry -->
+    <circle cx="50" cy="44" r="10" fill="#E63946" stroke="#C1222F" stroke-width="1.5" />
+    <ellipse cx="46" cy="40" rx="3" ry="2.5" fill="#FF6B7A" opacity="0.7" />
+    <path d="M50 34 Q54 22 63 18" stroke="#4A8C3F" stroke-width="3" fill="none" stroke-linecap="round" />
+    <ellipse cx="65" cy="16" rx="6" ry="3.5" fill="#5DAE50" transform="rotate(-20 65 16)" />
+  </g>
+
+  <!-- GOODIE GOODIE text -->
+  <text x="150" y="228" text-anchor="middle" font-family="Fredoka One, Bubblegum Sans, cursive, sans-serif" font-size="42" font-weight="700" fill="#E63946" stroke="#C1222F" stroke-width="1" letter-spacing="1">
+    GOODIE GOODIE
+  </text>
+
+  <!-- FOOD text -->
+  <text x="150" y="270" text-anchor="middle" font-family="Fredoka One, Bubblegum Sans, cursive, sans-serif" font-size="50" font-weight="700" fill="#F4A83D" stroke="#D4862A" stroke-width="1.2" letter-spacing="6">
+    FOOD
+  </text>
+
+  <!-- DESSERT TRUCK subtitle -->
+  <text x="150" y="298" text-anchor="middle" font-family="Nunito, Comic Neue, sans-serif" font-size="14" font-weight="600" fill="#8B5E3C" letter-spacing="4">
+    DESSERT TRUCK
+  </text>
+
+  <!-- Decorative dots -->
+  <circle cx="80" cy="293" r="3" fill="#FF8FAB" opacity="0.7" />
+  <circle cx="220" cy="293" r="3" fill="#7EDCB5" opacity="0.7" />
+</svg>
