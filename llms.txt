@@ -13,7 +13,7 @@ Goodie Goodie Food is a premium dessert truck and catering service based in Lewi
 - Booking: Full-service truck catering available. Fill out the booking form on our website for a custom quote.
 
 ## Contact
-- Email: hello@goodiegoodiefood.com
+- Email: ggoodiefood@gmail.com
 - Social: @goodiegoodiefood
 - Website: https://a7ussein.github.io/GoodieGoodieFood/
 
