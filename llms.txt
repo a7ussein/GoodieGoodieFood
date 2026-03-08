@@ -1,0 +1,22 @@
+# Goodie Goodie Food
+
+Goodie Goodie Food is a premium dessert truck and catering service based in Lewiston, Maine. We provide artisan desserts for events, including chocolate-dipped strawberries, mini pancakes, and crafted drinks.
+
+## Core Offerings
+- Chocolate Strawberries: Hand-dipped in milk, dark, or white chocolate with premium toppings.
+- Mini Pancakes: Fluffy, bite-sized pancakes cooked fresh with sweet drizzles and fruits.
+- Crafted Drinks: Signature lemonades and hot chocolate.
+
+## Service Details
+- Location: Serving Lewiston, Maine and surrounding areas.
+- Event Types: Birthdays, weddings, corporate events, festivals, graduations, baby showers.
+- Booking: Full-service truck catering available. Fill out the booking form on our website for a custom quote.
+
+## Contact
+- Email: hello@goodiegoodiefood.com
+- Social: @goodiegoodiefood
+- Website: https://a7ussein.github.io/GoodieGoodieFood/
+
+## Developer Notes
+Crafted by Automyte (https://automyte.dev/).
+This is a static website utilizing HTML, CSS, and Vanilla JavaScript. Form submissions are handled securely via Formspree.
