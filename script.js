@@ -69,37 +69,62 @@ document.addEventListener('DOMContentLoaded', () => {
     revealObserver.observe(el);
   });
 
-  // ---------- Booking Form Submission ----------
+  // ---------- Booking Form Submission (Formspree) ----------
   const bookingForm = document.getElementById('bookingForm');
   const formCard = document.getElementById('formCard');
   const formSuccess = document.getElementById('formSuccess');
+  const submitBtn = bookingForm ? bookingForm.querySelector('.submit-btn') : null;
 
-  bookingForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+  if (bookingForm) {
+    bookingForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
 
-    // Simple validation
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const date = document.getElementById('date').value;
-    const eventType = document.getElementById('event').value;
+      // Simple validation
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const date = document.getElementById('date').value;
+      const eventType = document.getElementById('event').value;
 
-    if (!name || !email || !date || !eventType) {
-      return;
-    }
+      if (!name || !email || !date || !eventType) return;
 
-    // Show success state
-    formCard.style.display = 'none';
-    formSuccess.style.display = 'block';
+      const originalBtnText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending... ⏳';
 
-    // Re-trigger reveal animation
-    formSuccess.classList.remove('revealed');
-    requestAnimationFrame(() => {
-      formSuccess.classList.add('revealed');
+      try {
+        const response = await fetch(bookingForm.action, {
+          method: 'POST',
+          body: new FormData(bookingForm),
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          // Show success state
+          formCard.style.display = 'none';
+          formSuccess.style.display = 'block';
+
+          // Re-trigger reveal animation
+          formSuccess.classList.remove('revealed');
+          requestAnimationFrame(() => {
+            formSuccess.classList.add('revealed');
+          });
+
+          // Scroll to success message
+          formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          bookingForm.reset();
+        } else {
+          alert('Oops! There was a problem submitting your form. Please try again.');
+        }
+      } catch (error) {
+        alert('Oops! There was a network problem submitting your form. Please try again.');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalBtnText;
+      }
     });
-
-    // Scroll to success message
-    formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  });
+  }
 
   // ---------- Set minimum date to today ----------
   const dateInput = document.getElementById('date');
